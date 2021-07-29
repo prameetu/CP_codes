@@ -7,7 +7,16 @@ using namespace std;
 
 void ans()
 {
-    
+    float e,k;
+    cin >> e >> k;
+    int level(1);
+    while(floor(e/k)>0)
+    {
+        level++;
+        e = floor(e/k);
+    }
+
+    cout << level << "\n";
 }
 
 int main()

@@ -7,7 +7,21 @@ using namespace std;
 
 void ans()
 {
-    
+    int a,b;
+    int ans(0);
+    cin >> a >> b;
+    if (a<b)
+        cout << 1 << "\n";
+    else    
+    {
+        while(a)
+        {
+            ans = ans+1;
+            a = a%b;
+        }
+    }
+
+    cout << ans << "\n";
 }
 
 int main()

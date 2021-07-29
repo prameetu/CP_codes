@@ -7,7 +7,19 @@ using namespace std;
 
 void ans()
 {
-    
+    ll n;
+    cin >> n;
+    vector <ll> v(n);
+    ll ans(0);
+    rep(i,0,n){
+        cin >> v[i];
+    }
+    rep(i,1,n){
+        ans = max(ans,(v[i-1]*v[i]));
+    }
+
+    cout << ans << "\n";
+
 }
 
 int main()
