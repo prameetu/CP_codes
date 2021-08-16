@@ -7,34 +7,27 @@ using namespace std;
 
 void ans()
 {
-    int a1,a2,a3,a4;
-    cin >> a1 >> a2 >> a3 >> a4;
-    vector <int> v(11);
-    v[a1]++;
-    v[a2]++;
-    v[a3]++;
-    v[a4]++;
-    int ct(0);
-    for(auto x:v)
-    {
-        if(x>1)
-            ct += x;
+    int a;
+    unordered_map <int,int> m;
+    rep(i,0,4){
+        cin >> a;
+        m[a]++; 
     }
-    if(ct==0 ||ct == 2 ){
-        cout << 2 << "\n";
-        return;
+    if(m.size()==4 ||m.size()==3){
+        cout << 2 << endl;
     }
-    
-    if(ct==3 ){
-        cout << 1 << "\n";
-        return;
+    else if(m.size()==1){
+        cout << 0 << endl;
     }
-    if(ct==4){
-        cout << 0 << "\n";
-        return;
+    else{
+        for(auto x:m){
+            if(x.second % 2 == 0)
+                cout << 2 << endl;
+            else
+                cout << 1 << endl;
+            break;
+        }
     }
-    
-
 
 }
 
