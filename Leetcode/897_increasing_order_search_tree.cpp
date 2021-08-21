@@ -46,7 +46,7 @@ public:
     {
         TreeNode* dummy = new TreeNode(-1);
         curr = dummy;
-
+        inorder(root);
         return dummy->right;
 
     }
