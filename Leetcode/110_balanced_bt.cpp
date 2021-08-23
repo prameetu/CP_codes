@@ -27,4 +27,27 @@ public:
         else
             return false;
     }
+
+    //O(n) solution
+
+    bool isBalanced(TreeNode* root){
+        if(dfsheight(root) != -1)
+            return true;
+        return false;
+    }
+
+    int dfsheight(TreeNode *root){
+        if(!root)
+            return 0;
+        
+        int left_height = dfsheight(root->left);
+        int right_height = dfsheight(root->right);
+        
+        if(left_height == -1 || right_height == -1)
+            return -1;
+        if(abs(left_height-right_height) > 1)
+            return -1;
+
+        return max(left_height,right_height) + 1;
+    }
 };
