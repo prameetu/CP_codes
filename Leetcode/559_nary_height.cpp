@@ -28,7 +28,7 @@ public:
     int maxDepth(Node *root){
         if(!root)
             return 0;
-        int max_height = -1;
+        int max_height = 0;
         for(auto x:root->children)
         {
             int curr_height = maxDepth(x) + 1;
