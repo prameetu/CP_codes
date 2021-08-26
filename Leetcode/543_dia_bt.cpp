@@ -41,8 +41,8 @@ public:
     {
         if(!root)
             return 0;
-        int lh = helper(root->left);
-        int rh = helper(root->right);
+        int lh = helper(root->left,dia);
+        int rh = helper(root->right,dia);
 
         dia = max(dia,(lh+rh));
 
@@ -57,5 +57,4 @@ public:
         
     }
 
-    int D
 };
