@@ -1,0 +1,1 @@
+{"name":"Local: facedir","url":"c:\\Users\\Prameet Upaddhyay\\Desktop\\CODES\\CP_codes\\CODECHEF\\facedir.cpp","tests":[{"id":1631723527201,"input":"3\n1\n3\n6\n","output":"East\nWest\nSouth\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Prameet Upaddhyay\\Desktop\\CODES\\CP_codes\\CODECHEF\\facedir.cpp","group":"local","local":true}
