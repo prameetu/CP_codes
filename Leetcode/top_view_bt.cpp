@@ -79,7 +79,7 @@ class Solution
                 q.push({curr_node->left,ver-1});
             
             if(curr_node->right)
-                q.push({curr_node->right,ver-1});
+                q.push({curr_node->right,ver+1});
         }
 
         for(auto num:mp)
