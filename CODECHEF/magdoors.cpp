@@ -7,6 +7,18 @@ using namespace std;
 
 void ans()
 {
+    string s;
+    cin >> s;
+    auto curr = '1';
+    ll ans(0);
+    for(auto x:s){
+        if(curr != x){
+            ans++;
+            curr = x;
+        }
+    }
+
+    cout << ans << "\n";
 }
 
 int main()

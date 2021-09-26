@@ -7,6 +7,13 @@ using namespace std;
 
 void ans()
 {
+    ll p,a,b,c,x,y;
+    
+    cin>> p >> a >> b >> c >> x >> y; 
+    
+    ll res = min((x*a)+b,(y*a)+c);
+    ll ans = p/res;
+    cout << ans << "\n";
 }
 
 int main()
