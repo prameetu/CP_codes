@@ -28,6 +28,7 @@ public:
         if (root == NULL) return; 
         inorderTraversal(root->left); 
         if (prev == root->val) cnt++;
+        
         else cnt = 1;
         if (cnt > maxCnt)
         {
