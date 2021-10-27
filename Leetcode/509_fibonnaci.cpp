@@ -11,4 +11,17 @@ public:
             return 1;
         return fib(n-1) + fib(n-2);
     }
+    int fib(int n)
+    {
+        int dp[n+1];
+        for(int i=0;i<=n;i++)
+        {
+            if(n<2)
+                dp[i] = i;
+            else 
+                dp[i] = dp[i-1]+dp[i-2];
+        
+        }
+        return dp[n];
+    }
 };
