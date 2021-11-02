@@ -14,13 +14,9 @@ void moveZeroes(vector<int>& nums)
             j++;
         }
     }
+    
     for(int i = j; i < nums.size(); i++)
     {
         nums[i] = 0;
     }
-}
-
-int main()
-{
-
 }
