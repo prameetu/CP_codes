@@ -3,6 +3,7 @@
         "cmath": "cpp",
         "iostream": "cpp",
         "new": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "vector": "cpp"
     }
 }
