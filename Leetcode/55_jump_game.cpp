@@ -7,15 +7,15 @@ public:
     
 
     bool canJump(vector<int>& nums) {
-        int n(nums.size());
-        int last(n-1);
-        
-        for(int i = n-2;i>=0;i--)
+        int n(nums.size())
+        int last(n-1)
+
+        for(int i=n-1;i>=0;i--)
         {
-            if(i+nums[i] >= last)
+            if(i+nums[i] >= l)
                 last = i;
         }
-        
-        return last = 0;
+
+        return l == 0;
     }
 };
