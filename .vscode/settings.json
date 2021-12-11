@@ -1,9 +1,11 @@
 {
     "files.associations": {
+        "*.ejs": "html",
         "cmath": "cpp",
         "iostream": "cpp",
         "new": "cpp",
         "valarray": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "deque": "cpp"
     }
 }
