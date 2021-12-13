@@ -26,7 +26,7 @@ public:
             for(int j=0;j<n;j++)
             {
                 if(grid[m][n] == 1)
-                    ans = max(res,dfs(grid,i,j));
+                    ans = max(ans,dfs(grid,i,j));
             }
         } 
 

@@ -17,11 +17,22 @@ int no_of_set_bits(int n)
 vector<int> countBits(int n) 
 {
     vector <int> ans;
-    for(int i=0;i<n+1;i++)
+    for(int i=0;i<n+1;i++)//------------n
     {
-        ans.push_back(no_of_set_bits(i));
+        ans.push_back(no_of_set_bits(i));//---------logn
     }        
 
+    return ans;
+}
+
+vector<int> countBits(int n) 
+{
+    vector <int> ans(n+1,0);
+
+    for(int i=0;i<n+1;i++)
+    {
+        ans[i] = ans[i & i-1] + 1;
+    }
     return ans;
 }
 int main()
