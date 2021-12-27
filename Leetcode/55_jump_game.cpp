@@ -1,4 +1,4 @@
-#include<bits/stdc++>
+#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -7,13 +7,13 @@ public:
     
 
     bool canJump(vector<int>& nums) {
-        int n(nums.size())
-        int last(n-1)
+        int n(nums.size());
+        int l(n-1);
 
         for(int i=n-1;i>=0;i--)
         {
             if(i+nums[i] >= l)
-                last = i;
+                l = i;
         }
 
         return l == 0;
