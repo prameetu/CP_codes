@@ -6,6 +6,7 @@
         "new": "cpp",
         "valarray": "cpp",
         "vector": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "string": "cpp"
     }
 }
